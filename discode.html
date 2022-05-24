@@ -6,36 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-         main {
-            background-image:url(../yeb/img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
+        .div {
+            display: block;
+        }
+
+        .header-wrapper {
+            display: flex;
+            position: relative;
+            max-width: 1160px;
+            height: 71px;
+            width: 1060px;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .body {
+            background-color: white;
+            color: blue;
+            font-family: Whitney,Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .nav {
+            width: auto;
+            display: inline-block;
+            position: relative;
+            white-space: nowrap;
+            padding: 15px;
+        }
+
+        .nav-wrapper a {
+            border: 0;
+            color: blue;
+            font-size: 14px;
+            width: auto;
+        }
+
+        .main {
+            background-image: url(img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
             background-position: center;
             background-size: cover;
+            width: 100%;
+            text-align: center;
             height: 300px;
+            
         }
+
+
+
+
+       
+
+         
     </style>
 
 </head>
 
 <body>
     <header>
-        <div class="div-wrapper">
+        <div class="header-wrapper">
             <figure class="logo">
                 <object data="img/cc59daa07820943e943c2fc283b9079d7003ff76.svg" type="image/svg+xml"></object>
             </figure>
+            
+            <nav class="nav-wrapper">
+                <ul>
+                    <li><a>피드백</a></li>
+                    <li><a>한국어</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
+                          </svg>
+                    </li>
+
+
+
+                    <li><a>문의등록</a></li>
+                </ul>
+                <li><a href="a">로그인</a></li>
+            </nav>
         </div>
-        
-        <nav class="nav-wrapper">
-            <ul>
-                <li><a href="a">피드백</a></li>
-                <li><a href="a">한국어</a></li>
-                <li><a href="a">문의등록</a></li>
-            </ul>
-            <li><a href="a">로그인</a></li>
 </header>
 
     <main>
@@ -61,8 +118,9 @@
 
          <section class="category">.</section>
          <ul class="flex-container">
-             <a href="..">
+             <a>
                  <li class="flex-item known-issues">
+                     <object data="img/1bd76d1fd516f8dacd3c7422a8ceb929ef2502d9.svg" type="image/svg+xml"></object>
                      <h2>공지사항</h2>
                      <hr>
                      <h3>
@@ -70,57 +128,65 @@
                      </h3>
                      </li>
              </a>
-             <a href="..">
+             <a>
                  <li class="flex-item discord-interface">
+                     <object data="img/8c6c6469bdca01e05d2870e6d373c1d80e290255.svg" type="image/svg+xml"></object>
                      <h2>Discord 인터페이스</h2>
                      <hr>
                      <h3>이 버튼은 무엇인가요?!</h3>
                  </li>
              </a>
-             <a href="..">
+             <a>
                  <li class="flex-item text-chat">
+                     <object data="img/35f736c34c81d953054d0c1e202f71c8094f8fbf.svg" type="image/svg+xml"></object>
                      <h2>시작하기</h2>
                      <hr>
                      <h3>첫 단추를 제대로 끼워야 합니다!</h3>
                  </li>
              </a>
-             <a href="..">
+             <a >
                  <li class="flex-item server-set up">
+                     <object data="img/33f0bd0c3a2c58763cb0404a18bb38da48fc289d.svg" type="image/svg+xml"></object>
                      <h2>서버 설정</h2>
                      <hr>
                      <h3>실내 장식만큼 재미있는 것.</h3>
                  </li>
              </a>
-             <a href="..">
+             <a>
                  <li class="flex-item community-programs">
+                     <object data="img/dd93acfbff40b1ea53f2b4e8fa51ac142486bd13.svg" type="image/svg+xml"></object>
                      <h2>커뮤니티 프로그램</h2>
                      <hr>
                      <h3>hypeSquaders를 위한 광고,파트너를위한 파티</h3>
                  </li>
              </a>
-             <a href="..">
+             <a>
                  <li class="flex-item">
+                     <object data="img/d7415f17818f8caabf5d98099171b227201a3e41.svg" type="image/svg+xml"></object>
                      <h2>Nitro</h2>
                      <hr>
                      <h3>쓰러질 때까지 쇼핑하시면 안 돼요! 저희가 도와드릴게요.</h3>
                  </li>
              </a>
-             <a href="..">
+             <a >
                  <li class="flex-item biling">
+                     <object data="img/e5bd3c63530b0a8e55b406528f2fd9d61b8bd923.svg" type="image/svg+xml"></object>
                      <h2>청구서</h2>
                      <hr>
                      <h3> 은향 계좌 잔액을 보는 기분.</h3>
                  </li>
              </a>
-             <a href="..">
+             <a >
                  <li class="flex-item trust-safety">
+                     <object data="img/6f28e83ed890200c649526472dec1e8f593fe1dd.svg" type="image/svg+xml"></object>
                      <h2>신뢰 & 보안</h2>
                      <hr>
                      <h3>안전하고 건전하게</h3>
                  </li>
              </a>
-             <a href="..">
+             <a>
                  <li class="flex-item faq">
+                     <object data="img/1883060a5132c470528a20c1cfe42976e7c167ca.svg" type="image/svg+xml"></object>
                      <h2>자주 묻는 질문</h2>
                      <hr>
                      <h3>스스로 해결해 보아요.</h3>
@@ -128,19 +194,21 @@
              </a>
         </ul>
         <section class="intro">
-            <pre>      </pre>
+            <pre>  </pre>
             <h2>도움을 받을 수 있는 다른 방법</h2>
         </section>
         <section class="category-grid">
             <ul class="flex-container">
-                <a href="..">
+                <a>
                     <li class="flex-item hclogo"></li>
+                    <object data="../yeb/img/66a7b3885ab7dccb734dd94b9ed3408fc410d30c.svg" type="image/svg+xml"></object>
                     <h2>게임 개발자</h2>
                     <hr>
                     <h3>디스코드에 당신의 게임을 올리고 실행해 보세요! 게임 개발자를 위한 지원은 여기에서 해 주세요!</h3>
                 </a>
-                <a href="..">
+                <a>
                     <li class="flex-item twitter">
+                        <object data="../yeb/img/ceb4c1d378277188ab383a50029b43e5d3b1581b.svg" type="image/svg+xml"></object>
                         <h2>Twitter</h2>
                         <hr>
                         <h3>질문이 있으신가요? 저희에게 트윗을 보내주세요!</h3>
@@ -159,65 +227,65 @@
                 </button>
             </a>
         <div class="apps">
-            <a href="..">
-                <img src="../yeb/img/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg" alt=".">
+            <a>
+                <img src="img/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg" alt=".">
             </a>
-            <a href="..">
-                <img src="../yeb/img/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg" alt=".">
+            <a>
+                <img src="img/faa4afbc252ccaa8d959cedf65f6e59b4d75b167.svg" alt=".">
             </a>
-            <a href="..">
-                <img src="../yeb/img/e2b9fb24a30f282977edd9c280820029e767b160.svg" alt=".">
+            <a>
+                <img src="img/e2b9fb24a30f282977edd9c280820029e767b160.svg" alt=".">
             </a>
-            <a href="..">
-                <img src="../yeb/img/47100981c9f8e640b597c228528f303b5b5ae4ac.svg" alt=".">
+            <a>
+                <img src="img/47100981c9f8e640b597c228528f303b5b5ae4ac.svg" alt=".">
             </a>
-            <a href="..">
-                <img src="../yeb/img/22df88a591db1baf678cb7435a7ec52317daba6f.svg" alt=".">
+            <a>
+                <img src="img/22df88a591db1baf678cb7435a7ec52317daba6f.svg" alt=".">
             </a>
             </div>
         </div>
         <nav class="nav">
             <div class="branding">
-                <a href="..">
-                    <img src="../yeb/img/2a944f43170f2222e136854fe9c9e2c9ea6a1971.svg" alt=".">
+                <a >
+                    <img src="img/2a944f43170f2222e136854fe9c9e2c9ea6a1971.svg" alt=".">
                 </a>
             </div>
             <div class="spacer"></div>
             <div class="links">
                 <div class="links-col">
                     <div class="links-item">
-                        <a href="." class="link-a">다운로드</a>
+                        <a >다운로드</a>
                     </div>
                     <div class="links-item">
-                        <a href=".." class="link-a">지원</a>
+                        <a>지원</a>
                     </div>
                     <div class="links-item">
-                        <a href=".." class="link-a">피드백</a>
+                        <a>피드백</a>
                     </div>
                     <div class="links-item">
-                        <a href=".." class="link-a">상태</a>
+                        <a>상태</a>
                     </div>
                 </div>
                 <div class="links-col">
                     <div class="links-item">
-                        <a href=".." class="link-a">파트너</a>
+                        <a>파트너</a>
                     </div>
                 <div class="links-item">
-                    <a href=".." class="link-a">HypeSquad</a>
+                    <a>HypeSquad</a>
                 </div>
                 <div class="links-item">
-                    <a href=".." class="link-a">상점</a>
+                    <a>상점</a>
                 </div>
             <div class="links-item">
-                <a href=".." class="link-a">제품 이미지</a>
+                <a>제품 이미지</a>
             </div>
                 </div>
                 <div class="links-col">
                     <div class="links-item">
-                        <a href=".." class="link-a">회사</a>
+                        <a>회사</a>
                     </div>
                     <div class="links-item">
-                        <a href=".." class="link-a">직업</a>
+                        <a>직업</a>
                         <span class="link-sep">
                             -
                         </span>
@@ -226,11 +294,11 @@
                         </span>
                     </div>
                 <div class="links-item">
-                    <a href=".." class="link-a">조건</a>
+                    <a>조건</a>
                     <span class="link-sep">
                         &
                     </span>
-                    <a href=".." class="link-a">개인 정보 보호
+                    <a>개인 정보 보호
                     </a>
                 </div>
             </div>
