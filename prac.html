@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Lab</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #ede7f6;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 20vh;
+        }
+        .icon {
+            margin: 13px;
+            width: 100px;
+            display: flex;
+        }
+        .menubar ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menubar ul li {
+            margin: 10px;
+            padding: 10px;
+        }
+        .signButton>button{
+           margin: 15px;
+           width: 60px;
+           height: 30px;
+           border: 0;
+           border-radius: 5px;
+           background-color: #b39ddb;
+        }
+        .signButton>button:hover {
+            background-color: #e6ceff;
+        }
+        .main {
+            height: 80vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .main *{
+            margin-bottom: 20px;
+        }
+        .left {
+            width: 50%;
+            margin-left: 50x;
+            display: flex;
+            flex-direction: column;
+        }
+        .text {
+            width: 40vh;
+        }
+        .text h5 {
+            color: #ae52d4;
+        }
+        .text h2 {
+            color: #e7b9ff;
+            font-size: 2em;
+        }
+        .main button {
+            margin: 10px;
+            width: 100px;
+            height: 45px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #b39ddb;
+        }
+        .main button:hover {
+            background-color: #e6ceff;
+        }
+        .right{
+            width: 50%;
+        }
+        .lablmg {
+            align-self: flex-end;
+            justify-self: center;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="header">
+            <div class="icon">
+                <i class="fas-fa-flask"></i>
+                <a href="#"><h1>Lab</h1></a>
+            </div>
+            <nav class="menubar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Prooduct</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="signButton">
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="left">
+                <div class="text">
+                    <h5>WELCOM LAB</h5>
+                    <h2>Eu do execiataion reprehenerit culpa do occaecat fugiat nulla.</h2>
+                    Ut incididunt aliqua culpa enim.Velit aliqua dolor cupidatat veniam mimim execepteur magna dolor incididunt ea deserunt ex nulla.Exercitation esse quis ea velit ullamco esse deserunt ut dolore.Sunt quis irure velit cupidatat molitut culpa reprehenderit duis.
+                </div>
+                <div class="fintbutton">
+                    <button>Explore</button>
+                    <button>Watch Video</button>
+                </div>
+            </div>
+            <div class="right">
+                <figure>
+                    <img src="img/science-g31d9cf5ce_1280.png" alt="lablmg">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

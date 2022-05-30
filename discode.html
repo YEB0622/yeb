@@ -12,13 +12,18 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .logo {
+            border-left: 4px solid;
+            padding: 6px;
+            margin-bottom: 15px;
+        }
 
         .div {
             display: block;
         }
 
         .header-wrapper {
-            display: flex;
+            
             position: relative;
             max-width: 1160px;
             height: 71px;
@@ -28,43 +33,71 @@
             align-items: center;
         }
         
-        .body {
-            background-color: white;
-            color: blue;
-            font-family: Whitney,Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            font-weight: 400;
-        }
-        .nav {
+        .nav-wrapper {
+            list-style: none;
             width: auto;
-            display: inline-block;
+            display: block;
             position: relative;
             white-space: nowrap;
             padding: 15px;
-        }
-
-        .nav-wrapper a {
-            border: 0;
+            clear: both;
             color: blue;
             font-size: 14px;
-            width: auto;
+        }
+    
+        
+        ul{
+            list-style: none;
+            float:left;
+            line-height: 30px;
+            vertical-align:middle;
+            text-align: right;
+
         }
 
-        .main {
+        .main-content {
             background-image: url(img/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
             background-position: center;
             background-size: cover;
             width: 100%;
             text-align: center;
             height: 300px;
-            
         }
-
-
-
-
-       
-
+        main {
+           background-color: white;
+           color: #4f545c;
+           font-family: sans-serif;
+           font-size: 15px;
+           font-weight: 400;
+           line-height: 1.5;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .flex-container{
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0;
+            list-style: none;
+            flex-flow: row wrap;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .flex-container{
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        
          
     </style>
 
@@ -83,12 +116,10 @@
                     <li><a>한국어</a>
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon">
                             <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"></path>
-                          </svg>
+                        </svg>
                     </li>
-
-
-
                     <li><a>문의등록</a></li>
+
                 </ul>
                 <li><a href="a">로그인</a></li>
             </nav>
@@ -98,16 +129,8 @@
     <main>
         <section id="main-content">
             <h1>고객 지원 센터</h1>
-            <figure>
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-iconb" aria-hidden="true">
-                    <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
-                    <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
-                  </svg>"
-            </figure>
-            <form role="search" class="search search-full search-kb-fix" data-search="" data-instant="true" autocomplete="off" action="/hc/ko/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓"><input type="search" name="query" id="query" placeholder="검색" autocomplete="off" aria-label="검색"><input type="hidden" name="filter_by" value="knowledge_base"></form>
-
-            
         </section>
+
         <h2>도움이 필요하신가요 ? 저희가 도와드리겠습니다.</h2>
         <br>
         <p>계정 설정부터 승인까지 Discord와 관련된 모든 것을 문의하세요. <br> Discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면,저희의 초보자를 위한 가이드를 확인해보세요!
